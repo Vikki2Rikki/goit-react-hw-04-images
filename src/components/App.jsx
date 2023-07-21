@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 import Searchbar from './Searchbar/Searchbar';
 import { Contaner } from './App.styled';
 import { getImages, PER_PAGE } from 'servises/api';
@@ -68,13 +67,3 @@ const App = () => {
 };
 
 export default App;
-
-App.propTypes = {
-  searchText: PropTypes.string,
-  images: PropTypes.array,
-  page: PropTypes.number,
-  isLoading: PropTypes.bool,
-  totalHits: PropTypes.number,
-  error: PropTypes.string,
-  onPagination: PropTypes.func,
-};
